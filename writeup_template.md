@@ -82,6 +82,7 @@ Second thing is to decide which erea to search and what scale factor to use in e
 Basically, I tried to adjust the search areas as stated above, and removed unnecessary scales, like 4 to optimize the pipeline. The performance of the classifier is already fixed once the mode is trained. I set `cells_per_block` to 1, which I believe can greatly reduce the overall feature size and save processing time. Ultimately I searched on 4 scales using YCrCb 3-channel HOG features plus spatially binned color and histograms of color in the feature vector, which provided a nice result.  Here are some example images:
 
 ![pipeline results][image4]
+
 ---
 
 ### Video Implementation
